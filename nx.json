@@ -39,6 +39,9 @@
     "admin-portal-e2e": {
       "tags": [],
       "implicitDependencies": ["admin-portal"]
+    },
+    "auth": {
+      "tags": []
     }
   }
 }

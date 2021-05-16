@@ -13,7 +13,16 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(
+      [
+        {
+          path: 'auth',
+          loadChildren: () =>
+            import('@demo-workspace/auth').then((module) => module.AuthModule),
+        },
+      ],
+      { initialNavigation: 'enabled' }
+    ),
     StoreModule.forRoot(
       {},
       {
