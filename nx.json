@@ -25,6 +25,13 @@
     "demo-cli-e2e": {
       "tags": [],
       "implicitDependencies": ["demo-cli"]
+    },
+    "customer-portal": {
+      "tags": []
+    },
+    "customer-portal-e2e": {
+      "tags": [],
+      "implicitDependencies": ["customer-portal"]
     }
   }
 }
