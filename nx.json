@@ -32,6 +32,13 @@
     "customer-portal-e2e": {
       "tags": [],
       "implicitDependencies": ["customer-portal"]
+    },
+    "admin-portal": {
+      "tags": []
+    },
+    "admin-portal-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin-portal"]
     }
   }
 }
