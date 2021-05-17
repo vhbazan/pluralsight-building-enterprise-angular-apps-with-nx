@@ -42,6 +42,9 @@
     },
     "auth": {
       "tags": []
+    },
+    "shared-auth": {
+      "tags": []
     }
   }
 }

@@ -16,10 +16,17 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     RouterModule.forRoot(
       [
         {
+          path: 'shared-auth',
+          loadChildren: () =>
+            import('@demo-workspace/shared/auth').then(
+              (module) => module.SharedAuthModule
+            ),
+        },
+        /* {
           path: 'auth',
           loadChildren: () =>
             import('@demo-workspace/auth').then((module) => module.AuthModule),
-        },
+        }, */
       ],
       { initialNavigation: 'enabled' }
     ),

@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@demo-workspace/auth": ["libs/auth/src/index.ts"]
+      "@demo-workspace/auth": ["libs/auth/src/index.ts"],
+      "@demo-workspace/shared/auth": ["libs/shared/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
