@@ -16,7 +16,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     RouterModule.forRoot(
       [
         {
-          path: 'shared-auth',
+          path: 'auth',
           loadChildren: () =>
             import('@demo-workspace/shared/auth').then(
               (module) => module.SharedAuthModule

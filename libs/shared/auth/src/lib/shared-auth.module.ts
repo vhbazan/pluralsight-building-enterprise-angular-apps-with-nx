@@ -11,7 +11,7 @@ import { LoginComponent } from './containers/login/login.component';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
+      { path: '', component: LoginComponent },
     ]),
     StoreModule.forFeature(fromAuth.AUTH_FEATURE_KEY, fromAuth.reducer),
     EffectsModule.forFeature([AuthEffects]),
